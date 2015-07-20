@@ -5,12 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\SprTileError</sprite>
+    <sprite>sprites\SprTileDon1Back</sprite>
+    <sprite>sprites\SprTileDon1Mask</sprite>
+    <sprite>sprites\SprTileDon1Front</sprite>
+    <sprite>sprites\SprCharacter</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <script>scripts\LoadTile.gml</script>
   </scripts>
+  <objects name="objects">
+    <object>objects\ObjDrawLevelBack</object>
+    <object>objects\ObjDrawLevelFront</object>
+    <object>objects\ObjCharacter</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\RmDom</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
