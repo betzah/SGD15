@@ -10,24 +10,24 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(room_width / 2, room_height - 400, ObjCharacter);
+  <code>instance_create(room_width / 2, room_height - 400, character);
 
 // Load the tiles
 
 // Start the first
-var _tileBack = instance_create(room_width / 2, room_height - 400, ObjDrawLevelBack);
-_tileBack.mask_index = SprTileDon1Mask;
-_tileBack.sprite_index = SprTileDon1Back;
-var _tileFront = instance_create(room_width / 2, room_height - 400, ObjDrawLevelFront);
-_tileFront.sprite_index = SprTileDon1Front;
+var _tileBack = instance_create(room_width / 2, room_height - 400, drawLevelBack);
+_tileBack.mask_index = sprTileDon1Mask;
+_tileBack.sprite_index = sprTileDon1Back;
+var _tileFront = instance_create(room_width / 2, room_height - 400, drawLevelFront);
+_tileFront.sprite_index = sprTileDon1Front;
 
 // Load the rest
 for (var i = 1; i &lt; 15; i += 1)
 {
-    var _tileBack = SprTileDon1Back;
-    var _tileMask = SprTileDon1Mask
-    var _tileFront = SprTileDon1Front;
-    LoadTile(room_width / 2, (room_height - 400) - 800 * i, _tileMask, _tileBack, _tileFront);
+    var _tileBack = sprTileDon1Back;
+    var _tileMask = sprTileDon1Mask
+    var _tileFront = sprTileDon1Front;
+    loadTile(room_width / 2, (room_height - 400) - 800 * i, _tileMask, _tileBack, _tileFront);
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -59,14 +59,14 @@ for (var i = 1; i &lt; 15; i += 1)
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="" xview="0" yview="0" wview="720" hview="1280" xport="0" yport="0" wport="720" hport="1280" hborder="360" vborder="640" hspeed="4" vspeed="4"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="720" hview="1280" xport="0" yport="0" wport="720" hport="1280" hborder="360" vborder="640" hspeed="4" vspeed="4"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances/>
   <tiles/>

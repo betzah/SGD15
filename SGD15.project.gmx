@@ -6,21 +6,41 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\SprTileError</sprite>
-    <sprite>sprites\SprTileDon1Back</sprite>
-    <sprite>sprites\SprTileDon1Mask</sprite>
-    <sprite>sprites\SprTileDon1Front</sprite>
-    <sprite>sprites\SprCharacter</sprite>
+    <sprite>sprites\sprTileError</sprite>
+    <sprite>sprites\sprCharacter</sprite>
+    <sprites name="Tiles">
+      <sprites name="Dom">
+        <sprite>sprites\sprTileDon1Back</sprite>
+        <sprite>sprites\sprTileDon1Mask</sprite>
+        <sprite>sprites\sprTileDon1Front</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Obstacles">
+      <sprites name="Bird">
+        <sprite>sprites\sprBirdShit</sprite>
+        <sprite>sprites\sprBird</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\LoadTile.gml</script>
+    <script>scripts\loadTile.gml</script>
+    <script>scripts\characterHit.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\ObjDrawLevelBack</object>
-    <object>objects\ObjDrawLevelFront</object>
-    <object>objects\ObjCharacter</object>
+    <object>objects\drawLevelBack</object>
+    <object>objects\drawLevelFront</object>
+    <object>objects\character</object>
+    <objects name="Obstacles">
+      <objects name="Bird">
+        <object>objects\birdShit</object>
+        <object>objects\bird</object>
+      </objects>
+      <objects name="Roundabout">
+        <object>objects\roubaboutCar</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\RmDom</room>

@@ -4,16 +4,15 @@ x, y, background, foreground
 */
 
 
-var _angle = choose(0, 180);
+var _bird = choose(0, 1, 1, 1, 2, 2, 3);
 // Start the first
-var _tileBack = instance_create(argument0, argument1, ObjDrawLevelBack);
+var _tileBack = instance_create(argument0, argument1, drawLevelBack);
 _tileBack.mask_index = argument2;
 _tileBack.sprite_index = argument3;
-_tileBack.image_angle = _angle;
-var _tileFront = instance_create(argument0, argument1, ObjDrawLevelFront);
+var _tileFront = instance_create(argument0, argument1, drawLevelFront);
 _tileFront.sprite_index = argument4;
-_tileFront.image_angle = _angle;
 
 
 
-//
+// create the bird
+repeat(_bird)instance_create(argument0 + 100 + random(190), argument1 - 75, bird);
