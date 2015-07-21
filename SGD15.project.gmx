@@ -20,10 +20,17 @@
         <sprite>sprites\sprBirdShit</sprite>
         <sprite>sprites\sprBird</sprite>
       </sprites>
+      <sprites name="Roundabout">
+        <sprite>sprites\sprCar</sprite>
+        <sprite>sprites\sprRoundaboutEvadeCircle</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\ptRoundabout</path>
+    <path>paths\ptRoundaboutReverse</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\loadTile.gml</script>
     <script>scripts\characterHit.gml</script>
@@ -38,7 +45,8 @@
         <object>objects\bird</object>
       </objects>
       <objects name="Roundabout">
-        <object>objects\roubaboutCar</object>
+        <object>objects\rounbaboutCar</object>
+        <object>objects\roundaboutEvadeCircle</object>
       </objects>
     </objects>
   </objects>

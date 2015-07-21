@@ -16,3 +16,8 @@ _tileFront.sprite_index = argument4;
 
 // create the bird
 repeat(_bird)instance_create(argument0 + 100 + random(190), argument1 - 75, bird);
+
+// round about
+instance_create(argument0, argument1, roundaboutEvadeCircle);
+instance_create(argument0 - 600, argument1 + 50, rounbaboutCar);
+instance_create(argument0 + 600, argument1 - 50, rounbaboutCar);
